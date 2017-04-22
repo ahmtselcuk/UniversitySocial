@@ -8,20 +8,25 @@ using System.Data;
 using System.Data.SqlClient;
 namespace UniversitySocial
 {
-    public partial class HomeScreen : System.Web.UI.MasterPage
+    public partial class UsersProfile : System.Web.UI.MasterPage
     {
         DatabaseConnection baglan = new DatabaseConnection();
-        protected void Page_Load(object sender, EventArgs e)
+        string users_ID;
+         protected void Page_Load(object sender, EventArgs e)
         {
             SqlCommand cmd = new SqlCommand("SELECT *FROM Users WHERE users_ID=@users_ID", baglan.baglan());
             cmd.Parameters.Add("@users_ID", Session["users_ID"]);
+
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                lbl_users.Text = dr["users_Name"].ToString();
+
+                Label1.Text = dr["users_Name"].ToString() + "" + dr["users_Surname"].ToString();
 
             }
+             
 
+           
         }
     }
 }

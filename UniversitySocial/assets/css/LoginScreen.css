@@ -174,12 +174,11 @@ ul.navbar-nav {
 	vertical-align: middle;
 }
 .navbar-inverse ul.navbar-nav li .li-social a:hover, 
-.navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #19b9e7; }
+.navbar-inverse ul.navbar-nav li .li-social a:focus { border: 0; color: #19e7e1; }
 
-.navbar-brand {
-	width: 123px;
-	background: url(../img/logo.png) left center no-repeat;
-	text-indent: -99999px;
+.navbar-brand{
+    font-family:Tahoma;
+
 }
 
 
@@ -190,8 +189,9 @@ ul.navbar-nav {
 }
 
 .top-content .text {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 	color: #fff;
+
 }
 
 .top-content .text h1 { color: #fff; }

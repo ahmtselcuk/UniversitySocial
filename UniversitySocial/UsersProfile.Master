@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UsersProfile.master.cs" Inherits="UniversitySocial.UsersProfile" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="assets/css/UsersProfile.css" rel="stylesheet" />
+    <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="assets/js/UsersProfile.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div> 
+        
+        <div class="container-fluid">
+	<div class="row">
+	<div class="profile-head">
+        <div class="profiles col-xs-8 col-xs-push-2  col-sm-10 col-sm-push-1 thumbnail">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="row">
+            <img src="http://www.newlifefamilychiropractic.net/wp-content/uploads/2014/07/300x300.gif" class="img-responsive" />
+           
+          </div>
+        </div>
+             <div class="col-md-9 visible-lg">
+               <div class="row">
+                 <span class="col-sm-12"><h5>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                                         </h5></span>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                     
+                      <p>Web Designer / Develpor </p>
+                      <ul>
+                      <li><span >36</span>,<span>5'2</span></li>
+                      <li><span>Pune</span></li>
+                      <li><span>Hindu Maratha</span></li>
+                       <li><span>Marathi</span></li>
+                     
+
+                      </ul>
+                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+                 <div class="col-md-4 col-sm-6 col-xs-12">
+                     
+                      <p>Web Designer / Develpor </p>
+                      <ul>
+                      <li><span >36</span>,<span>5'2</span></li>
+                      <li><span>Pune</span></li>
+                      <li><span>Hindu Maratha</span></li>
+                       <li><span>Marathi</span></li>
+                     
+                      </ul>
+                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+
+              </div>
+
+            </div>
+
+        </div>
+
+</div><!--profile-head close-->
+
+	</div>
+            
+
+        
+</div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </div>
+
+   
+    </form>
+</body>
+</html>
