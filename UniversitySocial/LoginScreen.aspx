@@ -6,26 +6,19 @@
 <head runat="server">
     <title></title>
     <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script src="assets/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="assets/js/ab-degisenArkaPlan.js"></script>
     <link href="assets/css/LoginScreen.css" rel="stylesheet" />
     <script src="assets/js/LoginScreen.js"></script>
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link h ref="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         
           <!--Navbar -->
 
-        <div class=" navbar navbar-inverse ">
-            <div class="navbar-brand">
-                <a  href="LoginScreen.aspx">University Social </a>
-            </div>
-            
-            
-        </div>
+     
            
           <!-- Top content -->
         <div class="top-content">
@@ -33,7 +26,7 @@
             <div class="inner-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
+                        <div class="col-sm-8 col-sm-offset-2 text  ">
                             <h1><strong>MEDİPOL</strong> SOSYAL AĞ </h1>
                             <div class="description">
                             	<p>
@@ -123,7 +116,7 @@
 
                                      <div class="alert alert-success" role="alert">
                                         
-			<button  type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+			<%--<button  type="button" class="close" data-dismiss="alert"><span>&times;</span></button>--%>
 
 			Kayıt işleminiz tamamlanmıştır,sistemimize giriş yapabilirsiniz !</div>
                                 </asp:Panel>

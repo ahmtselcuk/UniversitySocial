@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <script src="assets/js/jquery-1.11.3.min.js"></script>
     <link href="assets/css/UsersProfile.css" rel="stylesheet" />
     <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="assets/js/UsersProfile.js"></script>
@@ -13,67 +15,257 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div> 
+      <script src='//code.jquery.com/jquery-1.11.1.min.js' type="text/javascript"></script>
+
         
-        <div class="container-fluid">
-	<div class="row">
-	<div class="profile-head">
-        <div class="profiles col-xs-8 col-xs-push-2  col-sm-10 col-sm-push-1 thumbnail">
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="row">
-            <img src="http://www.newlifefamilychiropractic.net/wp-content/uploads/2014/07/300x300.gif" class="img-responsive" />
-           
-          </div>
+   <div class="container-fluid">
+  <div class="row">
+    <div class="fb-profile">
+        <img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example"/>
+        <img align="left" class="fb-image-profile thumbnail" src="http://lorempixel.com/180/180/people/8/" alt="Profile image example"/>
+        <div class="fb-profile-text">
+            <h1>
+       <asp:Label ID="lbl_name" runat="server" Text="Label"></asp:Label></h1>
+            
         </div>
-             <div class="col-md-9 visible-lg">
-               <div class="row">
-                 <span class="col-sm-12"><h5>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                                         </h5></span>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                     
-                      <p>Web Designer / Develpor </p>
-                      <ul>
-                      <li><span >36</span>,<span>5'2</span></li>
-                      <li><span>Pune</span></li>
-                      <li><span>Hindu Maratha</span></li>
-                       <li><span>Marathi</span></li>
-                     
+    </div>
+  </div>
+</div> <!-- /container fluid-->  
+<div class="container">
+  <div class="col-sm-8">
 
-                      </ul>
-                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
-                 <div class="col-md-4 col-sm-6 col-xs-12">
-                     
-                      <p>Web Designer / Develpor </p>
-                      <ul>
-                      <li><span >36</span>,<span>5'2</span></li>
-                      <li><span>Pune</span></li>
-                      <li><span>Hindu Maratha</span></li>
-                       <li><span>Marathi</span></li>
-                     
-                      </ul>
-                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
+      <div data-spy="scroll" class="tabbable-panel">
+        <div class="tabbable-line">
+          <ul class="nav nav-tabs ">
+            <li class="active">
+              <a href="#tab_default_1" data-toggle="tab">
+              About Her </a>
+            </li>
+            <li>
+              <a href="#tab_default_2" data-toggle="tab">
+             Education& Career</a>
+            </li>
+            <li>
+              <a href="#tab_default_3" data-toggle="tab">
+             Family Details</a>
+            </li>
+             <li>
+              <a href="#tab_default_4" data-toggle="tab">
+             Desire Partner</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab_default_1">
+ 
+              <p>
+                My daughter  is good looking, with pleasant personality, smart, well educated, from well cultural and  a religious family background. having respect in heart for others.  
+                would like to thanks you for visiting through my daughter;s profile. 
+                She has done PG in Human Resources after her graduation. 
+                At present working IN INSURANCE sector as Manager Training .
+              </p>
+              <h4>About her Family</h4>
+              <p>
+                About her family she belongs to a religious and a well cultural family background. 
+                Father - Retired from a Co-operate Bank as a Manager. 
+                Mother - she is a home maker. 
+                1 younger brother - works for Life Insurance n manages cluster. 
+              </p>
+              <h4>Education </h4>
+              <p>I have done PG in Human Resourses</p>
+              <h4>Occupation</h4>
+              <p>At present Working in Insurance sector</p>
+           
+            </div>
+            <div class="tab-pane" id="tab_default_2">
+              <p>
+                Education& Career
+              </p>
+              <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
 
+               </div>
               </div>
 
+             
+           
             </div>
+            <div class="tab-pane" id="tab_default_3">
+              <p>
+                Family Details
+              </p>
+              <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
 
+               </div>
+              </div>
+            </div>
+             <div class="tab-pane" id="tab_default_4">
+              <p>
+               Lifestyle
+
+              </p>
+               <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                     <label for="email">Highest Education:</label>
+                      <p> MBA/PGDM</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                 <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+                  <div class="form-group">
+                     <label for="email">Place of Birth:</label>
+                      <p> pune, maharashtra</p>
+                 </div>
+
+               </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-</div><!--profile-head close-->
-
-	</div>
-            
-
-        
+      </div>
+  
+  </div>
+  <div class="col-sm-4">
+   <div class="panel panel-default">
+    <div class="menu_title">
+       Paylaşım Kısımı
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-lg-12">
+                 <div class="form-group">
+                      <asp:Button ID="btn_yazılarım" runat="server" Text="Yazı Yaz" CssClass="btn-success form-control" />
+                 </div>
+                  <div class="form-group">
+                      <asp:Button ID="btn_itiraf" runat="server" Text="İtiraf Yap" CssClass="btn-success form-control" />
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Time of Birth:</label>
+                      <p> 11:20 min.</p>
+                  </div>
+                   <div class="form-group">
+                      <label for="email">Horroscoe Match not Necessory</label>
+                   </div>
+                    <div class="form-group">
+                      <label for="email">Sun Sign:</label>
+                      <p> Scorpio</p>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Rashi/ Moon sign:</label>
+                      <p> Mesh</p>
+                    </div>
+                     <div class="form-group">
+                      <label for="email">Nakshtra:</label>
+                      <p> Bharani</p>
+                    </div>
+                      <div class="form-group">
+                      <label for="email">Manglik:</label>
+                      <p> Manglik</p>
+                    </div>
+                <button type="submit" class="btn btn-danger btn-block">Submit</button>
+            </div>
+        </div>
+    </div>
 </div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+  </div>
+</div>
+        
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
-
-    </div>
-
-   
     </form>
 </body>
 </html>

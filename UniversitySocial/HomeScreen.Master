@@ -8,6 +8,7 @@
     <script src="assets/homescreen/js/jquery.js"></script>
     <link href="assets/homescreen/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/homescreen/css/sb-admin.css" rel="stylesheet" />
+    <link href="assets/css/HomeScreen.css" rel="stylesheet" />
     <link href="assets/homescreen/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -177,7 +178,7 @@
 
         <div id="page-wrapper">
 
-            <div class="container-fluid" >
+            <div class="container-fluid"  style="height:1000px;">
 
                 <!-- Page Heading -->
                
@@ -196,7 +197,7 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">26</div>
-                                        <div>New Comments!</div>
+                                        <div> mevcut Kullanıcı !</div>
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +219,7 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">12</div>
-                                        <div>New Tasks!</div>
+                                        <div>yazı sayısı!</div>
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +241,7 @@
                                     </div>
                                     <div class="col-xs-9 text-right">
                                         <div class="huge">124</div>
-                                        <div>New Orders!</div>
+                                        <div>!</div>
                                     </div>
                                 </div>
                             </div>
@@ -278,10 +279,10 @@
                 </div>
               
                    
-                    <div class="col-lg-4">
+                    
                         <div class=" row">
                            
-                            <div class="" style="min-height:500px;">
+                            <div class="" style="min-height:500px; ">
                               
                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
@@ -289,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
                 <!-- /.row -->
 
             </div>

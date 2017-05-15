@@ -17,11 +17,11 @@ namespace UniversitySocial
             SqlCommand cmd = new SqlCommand("SELECT *FROM Users WHERE users_ID=@users_ID", baglan.baglan());
             cmd.Parameters.Add("@users_ID", Session["users_ID"]);
 
-            SqlDataReader dr = cmd.ExecuteReader();
+           SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
 
-                Label1.Text = dr["users_Name"].ToString() + "" + dr["users_Surname"].ToString();
+            lbl_name.Text= dr["users_Name"].ToString() + "" + dr["users_Surname"].ToString();
 
             }
              
