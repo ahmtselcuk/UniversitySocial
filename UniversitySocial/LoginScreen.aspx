@@ -11,7 +11,7 @@
     <script src="assets/js/ab-degisenArkaPlan.js"></script>
     <link href="assets/css/LoginScreen.css" rel="stylesheet" />
     <script src="assets/js/LoginScreen.js"></script>
-    <link h ref="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,7 +30,7 @@
                             <h1><strong>MEDİPOL</strong> SOSYAL AĞ </h1>
                             <div class="description">
                             	<p>
-	                            	deneme
+	                            	<h3 style="color:orange;"><a href="/admin/AdminLogin.aspx">Yönetici girişi için tıklayınız.</a></h3>
                             	</p>
                             </div>
                         </div>
@@ -51,11 +51,11 @@
 			                    <form role="form" action="" method="post" class="registration-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-first-name">First name</label>
-			                        	<asp:TextBox ID="txt_emaill" runat="server" placeholder="Email adresinizi giriniz.." CssClass="form-control" ></asp:TextBox>
+			                        	<asp:TextBox ID="txt_emaill" TextMode="Email" runat="server" placeholder="Email adresinizi giriniz.." CssClass="form-control" ></asp:TextBox>
 			                        </div>
 			                        <div class="form-group">
 			                        	<label class="sr-only" for="form-last-name">Last name</label>
-                                                         	<asp:TextBox ID="txt_passwordd" runat="server" placeholder="Şifreniz" CssClass="form-control" ></asp:TextBox>
+                                                         	<asp:TextBox ID="txt_passwordd" TextMode="Password" runat="server" placeholder="Şifreniz" CssClass="form-control" ></asp:TextBox>
 			                        </div>
 			                       
 			                      <asp:Button ID="btn_giris" CssClass="btn btn-success center-block btn-lg" runat="server" Text="Giriş Yap" OnClick="btn_giris_Click"  />

@@ -2,220 +2,45 @@
 
 <!DOCTYPE html>
 
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+   
     <script src="assets/js/jquery-1.11.1.js"></script>
     <script src="assets/js/jquery-1.11.3.min.js"></script>
     <link href="assets/css/UsersProfile.css" rel="stylesheet" />
     <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="assets/js/UsersProfile.js"></script>
+<script src="assets/js/UsersProfile.js"></script> 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-      <script src='//code.jquery.com/jquery-1.11.1.min.js' type="text/javascript"></script>
-
+    <script src='//code.jquery.com/jquery-1.11.1.min.js' type="text/javascript"></script>
         
-   <div class="container-fluid">
+ <div class="container-fluid">
   <div class="row">
     <div class="fb-profile">
-        <img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/" alt="Profile image example"/>
-        <img align="left" class="fb-image-profile thumbnail" src="http://lorempixel.com/180/180/people/8/" alt="Profile image example"/>
+        <asp:Image ID="profile_background" Height="370" ImageAlign="Left" CssClass="fb-image-lg img-responsive "  runat="server" />
+        <asp:Image ID="profile_photo" Height="270" ImageAlign="Left" CssClass="fb-image-profile thumbnail img-responsive" runat="server" />
+       
+        
         <div class="fb-profile-text">
             <h1>
        <asp:Label ID="lbl_name" runat="server" Text="Label"></asp:Label></h1>
-            
+            <i class="gly"></i>
         </div>
     </div>
   </div>
 </div> <!-- /container fluid-->  
-<div class="container">
-  <div class="col-sm-8">
+<div class="">
+  <div class="col-sm-8 container">
 
-      <div data-spy="scroll" class="tabbable-panel">
-        <div class="tabbable-line">
-          <ul class="nav nav-tabs ">
-            <li class="active">
-              <a href="#tab_default_1" data-toggle="tab">
-              About Her </a>
-            </li>
-            <li>
-              <a href="#tab_default_2" data-toggle="tab">
-             Education& Career</a>
-            </li>
-            <li>
-              <a href="#tab_default_3" data-toggle="tab">
-             Family Details</a>
-            </li>
-             <li>
-              <a href="#tab_default_4" data-toggle="tab">
-             Desire Partner</a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab_default_1">
- 
-              <p>
-                My daughter  is good looking, with pleasant personality, smart, well educated, from well cultural and  a religious family background. having respect in heart for others.  
-                would like to thanks you for visiting through my daughter;s profile. 
-                She has done PG in Human Resources after her graduation. 
-                At present working IN INSURANCE sector as Manager Training .
-              </p>
-              <h4>About her Family</h4>
-              <p>
-                About her family she belongs to a religious and a well cultural family background. 
-                Father - Retired from a Co-operate Bank as a Manager. 
-                Mother - she is a home maker. 
-                1 younger brother - works for Life Insurance n manages cluster. 
-              </p>
-              <h4>Education </h4>
-              <p>I have done PG in Human Resourses</p>
-              <h4>Occupation</h4>
-              <p>At present Working in Insurance sector</p>
            
-            </div>
-            <div class="tab-pane" id="tab_default_2">
-              <p>
-                Education& Career
-              </p>
-              <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                     <label for="email">Highest Education:</label>
-                      <p> MBA/PGDM</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-              </div>
-              <div class="col-sm-6">
-                 <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-
-               </div>
-              </div>
-
-             
-           
-            </div>
-            <div class="tab-pane" id="tab_default_3">
-              <p>
-                Family Details
-              </p>
-              <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                     <label for="email">Highest Education:</label>
-                      <p> MBA/PGDM</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-              </div>
-              <div class="col-sm-6">
-                 <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-
-               </div>
-              </div>
-            </div>
-             <div class="tab-pane" id="tab_default_4">
-              <p>
-               Lifestyle
-
-              </p>
-               <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                     <label for="email">Highest Education:</label>
-                      <p> MBA/PGDM</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-              </div>
-              <div class="col-sm-6">
-                 <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-                  <div class="form-group">
-                     <label for="email">Place of Birth:</label>
-                      <p> pune, maharashtra</p>
-                 </div>
-
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+</asp:ContentPlaceHolder>
   </div>
   <div class="col-sm-4">
    <div class="panel panel-default">
@@ -226,35 +51,38 @@
         <div class="row">
             <div class="col-lg-12">
                  <div class="form-group">
-                      <asp:Button ID="btn_yazılarım" runat="server" Text="Yazı Yaz" CssClass="btn-success form-control" />
+                     <asp:Button ID="btn_article" CssClass="btn btn-success" runat="server" Text="Yazı Paylaş" OnClick="btn_article_Click" />
                  </div>
                   <div class="form-group">
-                      <asp:Button ID="btn_itiraf" runat="server" Text="İtiraf Yap" CssClass="btn-success form-control" />
+                      <asp:Button ID="btn_itiraf" runat="server" Text="İtiraf Yap" CssClass="btn-success " OnClick="btn_itiraf_Click" Height="26px" />
                   </div>
+                <div class="form-group">
+                      <label for="email">Hakkımda:</label>
+                    <asp:Label ID="lbl_hakkimda" runat="server" Text="Label"></asp:Label>
+                    </div>
                   <div class="form-group">
-                      <label for="email">Time of Birth:</label>
-                      <p> 11:20 min.</p>
+                      <label for="email">Email Bilgisi</label>
+                      <asp:Label ID="lbl_email" runat="server" Text="Label"></asp:Label>
                   </div>
                    <div class="form-group">
-                      <label for="email">Horroscoe Match not Necessory</label>
+                      <label for="email">Kayıt Tarihi</label>
+                       <asp:Label ID="lbl_registrationdate" runat="server" Text="Label"></asp:Label>
                    </div>
                     <div class="form-group">
-                      <label for="email">Sun Sign:</label>
-                      <p> Scorpio</p>
+                      <label for="email">Fakülte</label>
+                        <asp:Label ID="lbl_faculty" runat="server" Text="Label"></asp:Label>
                     </div>
                     <div class="form-group">
-                      <label for="email">Rashi/ Moon sign:</label>
-                      <p> Mesh</p>
+                      <label for="email">Bölüm</label>
+                        <asp:Label ID="lbl_bolum" runat="server" Text="Label"></asp:Label>
                     </div>
                      <div class="form-group">
-                      <label for="email">Nakshtra:</label>
-                      <p> Bharani</p>
+                      <label for="email">Memleket</label>
+                         <asp:Label ID="lbl_memleket" runat="server" Text="Label"></asp:Label>
                     </div>
-                      <div class="form-group">
-                      <label for="email">Manglik:</label>
-                      <p> Manglik</p>
-                    </div>
-                <button type="submit" class="btn btn-danger btn-block">Submit</button>
+
+
+                <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Güncelle" OnClick="Button1_Click" />                      
             </div>
         </div>
     </div>
@@ -262,10 +90,8 @@
   </div>
 </div>
         
+ 
 
-    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

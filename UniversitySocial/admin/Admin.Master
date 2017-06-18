@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="UniversitySocial.admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- styles -->
+    
+<link href="assets/css/styles.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    <form id="form1" runat="server">
+    <div>
+        <div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="index.html">Medipol Sosyal Network Admin</a></h1>
+	              </div>
+	           </div>
+	        
+	        
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> Anasayfa</a></li>
+                    <li><a href="AddSocialClubs.aspx"><i class="glyphicon glyphicon-calendar"></i> Kulüp Ekle</a></li>
+                    <li><a href="Article_Edit.aspx"><i class="glyphicon glyphicon-list"></i> Yazıları Düzenle</a></li>
+                    <li><a href="UsersEdit.aspx"><i class="glyphicon glyphicon-record"></i> Kullanıcıları Görüntüle</a></li>
+                      <li><a href="AddActivities.aspx" ><i class="glyphicon glyphicon-record"></i> Etkinlik Oluştur</a></li>
+                    <li><a href="AdminLogin.aspx"><i class="glyphicon glyphicon-tasks"></i> Çıkış Yap</a></li>
+                  
+                </ul>
+             </div>
+		  </div>
+		  <div class="col-md-10">
+		  	<div class="row" style="height:750px;">
+		  		
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                                 </asp:ContentPlaceHolder>
+		  		
+		  	</div>
+
+		  
+		  
+		  </div>
+		</div>
+    </div>
+        
+
+    <footer>
+         <div class="container">
+         
+            <div class="copy text-center">
+               Copyright 2014 <a href='#'>Website</a>
+            </div>
+            
+         </div>
+      </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+           </div>
+    </form>
+</body>
+</html>

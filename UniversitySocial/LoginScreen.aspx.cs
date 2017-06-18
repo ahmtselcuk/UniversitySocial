@@ -31,6 +31,7 @@ namespace UniversitySocial
         protected void btn_kaydet_Click(object sender, EventArgs e)
         {
 
+            //sisteme öğrenci kayıt etme işlemi
 
             SqlCommand cmdekle = new SqlCommand("insert into Users(users_Name,users_Surname,users_Email,users_Password) values  ('" + txt_name.Text + "','" + txt_surname.Text + "','" + txt_email.Text + "','" + txt_password.Text + "')", baglan.baglan());
             cmdekle.ExecuteNonQuery();
@@ -46,6 +47,7 @@ namespace UniversitySocial
         protected void btn_giris_Click(object sender, EventArgs e)
         {
             
+            // sisteme giriş işlemi
             SqlCommand cmd = new SqlCommand("Select *From  Users where users_Email='" +txt_emaill.Text + "' and users_Password='" + txt_passwordd.Text+"'or users_ID='"+users_ID+ "'", baglan.baglan());
             SqlDataReader dr = cmd.ExecuteReader();
 

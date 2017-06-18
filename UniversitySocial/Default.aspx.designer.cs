@@ -13,22 +13,31 @@ namespace UniversitySocial {
     public partial class Default {
         
         /// <summary>
-        /// txt_durum control.
+        /// txt_status control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_durum;
+        protected global::System.Web.UI.WebControls.TextBox txt_status;
         
         /// <summary>
-        /// file_resim control.
+        /// file_photo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload file_resim;
+        protected global::System.Web.UI.WebControls.FileUpload file_photo;
+        
+        /// <summary>
+        /// btn_share control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_share;
         
         /// <summary>
         /// lbl_id control.
@@ -40,22 +49,13 @@ namespace UniversitySocial {
         protected global::System.Web.UI.WebControls.Label lbl_id;
         
         /// <summary>
-        /// btn_durum control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_durum;
-        
-        /// <summary>
-        /// panel_durum control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel panel_durum;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// DataList1 control.
