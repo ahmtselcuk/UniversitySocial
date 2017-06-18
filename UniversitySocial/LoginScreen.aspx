@@ -30,7 +30,7 @@
                             <h1><strong>MEDİPOL</strong> SOSYAL AĞ </h1>
                             <div class="description">
                             	<p>
-	                            	<h3 style="color:orange;"><a href="/admin/AdminLogin.aspx">Yönetici girişi için tıklayınız.</a></h3>
+	                            	<h2 style=" background-color:orange;;"><a href="/admin/AdminLogin.aspx">Yönetici girişi için tıklayınız.</a></h2>
                             	</p>
                             </div>
                         </div>

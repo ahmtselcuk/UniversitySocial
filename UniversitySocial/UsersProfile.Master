@@ -54,7 +54,7 @@
                      <asp:Button ID="btn_article" CssClass="btn btn-success" runat="server" Text="Yazı Paylaş" OnClick="btn_article_Click" />
                  </div>
                   <div class="form-group">
-                      <asp:Button ID="btn_itiraf" runat="server" Text="İtiraf Yap" CssClass="btn-success " OnClick="btn_itiraf_Click" Height="26px" />
+                     
                   </div>
                 <div class="form-group">
                       <label for="email">Hakkımda:</label>
